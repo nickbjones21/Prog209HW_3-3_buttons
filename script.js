@@ -14,20 +14,20 @@ function updateTextBoxes(array) {
 
 //load dom content fisrt using eventlistener
 document.addEventListener('DOMContentLoaded', function() {
-    //write the values of the original Array into the textboxes using update function for my array
-    updateTextBoxes(origArray);
+  //write the values of the original Array into the textboxes using update function for my array
+  updateTextBoxes(origArray);
 
 
 
-//event listener for the 1st button
-const myButton1 = document.getElementById('myButton1');
-myButton1.addEventListener('click', function() {
-//Use map to square each element in origArray
-const newArray = origArray.map(function(num) {
-return Math.pow(num, 2);
-});
-updateTextBoxes(newArray);
-});
+  //event listener for the 1st button
+  const myButton1 = document.getElementById('myButton1');
+  myButton1.addEventListener('click', function() {
+  //Use map to square each element in origArray
+  const newArray = origArray.map(function(num) {
+  return Math.pow(num, 2);
+  });
+  updateTextBoxes(newArray);
+  });
 
   
   //----SECOND BUTTON----
@@ -56,7 +56,7 @@ updateTextBoxes(newArray);
   const myButton4 = document.getElementById('myButton4');
   myButton4.addEventListener('click', function() {
   updateTextBoxes(origArray);
-});
+  });
 
 });
 
