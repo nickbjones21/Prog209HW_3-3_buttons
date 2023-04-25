@@ -2,8 +2,8 @@
 const origArray = [2, 3, 4];
 
 //func to update value in text boxes, uses array as arguement.
-//uaccess all textboxes values using QuerySelctorAll, loops thru array with for loop because I couldn't figure out an easier way to update the values that worked.
-
+//uaccess all textboxes values using QuerySelctorAll.
+//loops thru array with for loop because I couldn't figure out a better way to update the values of the array that worked.
 function updateTextBoxes(array) {
     const textBoxes = document.querySelectorAll('.textbox');
     for (let i = 0; i < array.length; i++) {
